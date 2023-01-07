@@ -183,53 +183,41 @@
             <br><br><br><br>
 
       </div>
-
-      <!-- greensock cdn -->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
-
-      <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-      <script type="text/javascript">
-
-      // navigation starts here
-
-      $("#toggle").click(function() {
-            $(this).toggleClass('on');
-            $("#resize").toggleClass("active");
-      });
-
-      $("#resize ul li a").click(function() {
-            $(this).toggleClass('on');
-            $("#resize").toggleClass("active");
-      });
-
-      $(".close-btn").click(function() {
-            $(this).toggleClass('on');
-            $("#resize").toggleClass("active");
-      });
-
-      // navigation ends here
-
-      // nav animation
-
-      TweenMax.from("#brand", 1, {
-            delay: 0.4,
-            y: 10,
-            opacity: 0,
-            ease: Expo.easeInOut
-      })
-
-      TweenMax.staggerFrom("#menu li a", 1, {
-            delay: 0.4,
-            opacity: 0,
-            ease: Expo.easeInOut
-      }, 0.1);
-
-      // nav animation ends
-
-      new WOW().init();
-
-      </script>
-
-
+      <div class="githubSm">
+        <a href="https://github.com/EmpSwarup" target="_blank" rel="noopener noreferrer">
+          <img src="./img/github.png" alt="" />
+        </a>
+        <h2>Find Me on Github</h2>
+      </div>
+    </div>
+    <!-- CONTACT -->
+    <div class="footer">
+      <h2 class="contact">Socials:</h2>
+      <div class="wrapper">
+        <a href="https://www.facebook.com/swarupsapkota" target="_blank" rel="noopener noreferrer"><div class="icon facebook">
+           <div class="tooltip">
+              Facebook
+           </div>
+           <span><i class="fab fa-facebook-f"></i></span>
+        </div>
+      </a>
+        <a href="https://www.twitter.com/empswarup" target="_blank" rel="noopener noreferrer"><div class="icon twitter">
+           <div class="tooltip">
+              Twitter
+           </div>
+           <span><i class="fab fa-twitter"></i></span>
+        </div></a>
+        <a href="https://github.com/EmpSwarup" target="_blank" rel="noopener noreferrer"><div class="icon github">
+           <div class="tooltip">
+              Github
+           </div>
+           <span><i class="fab fa-github"></i></span>
+        </div></a>
+     </div>
+      <p class="email"><i class="fa-regular fa-envelope"></i> E-mail: swarupsapkota@gmail.com</p>
+      <p class="number"><i class="fa-solid fa-phone"></i> Phone: +977 9861 280327</p>
+    </div>
+  </div>
+  <script src="./app.js"></script>
 </body>
 </html>
